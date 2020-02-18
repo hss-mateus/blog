@@ -26,5 +26,9 @@ fields:
     required: false
   label: Cover link
   description: link to post image cover
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
 pages:
 - content/pages/como-instalar-o-arch-linux-de-maneira-fácil.md
