@@ -20,11 +20,6 @@ fields:
     display_utc: false
   hidden: true
   default: now
-- name: draft
-  type: boolean
-  label: Draft
-  description: make post visible for public
-  default: true
 - name: cover
   type: text
   config:
