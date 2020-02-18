@@ -1,7 +1,6 @@
 +++
 cover = "http://source.unsplash.com/Tjbk79TARiE/800x480"
 date = 2020-02-18T02:40:23Z
-draft = true
 tags = ["linux", "tutorial"]
 title = "Como Instalar o Arch Linux de Maneira Fácil"
 
