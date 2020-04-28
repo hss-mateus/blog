@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ if not .IsHome }}{{ .Title  }} | {{ end }}{{ $.Site.Title  }}</title>
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/main.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        {{ if not .IsHome }}
+        {{ .Title  }}
+        {{ else }}
+        {{ .Site.Title }}
+        {{ end }}
+      </h1>
+
+      {{ if not .IsHome }}<a href="{{ .Site.BaseURL }}">home ↩</a>{{ end  }}
+    </header>
+
+    <hr>
+
+    {{ block "main" . }}{{- end }}
+
+    <hr>
+
+    <footer>
+      <a href="{{ .Site.BaseURL }}../">About Me</a>
+
+      <a href="{{ .Site.BaseURL }}index.xml">RSS</a>
+    </footer>
+  </body>
+</html>

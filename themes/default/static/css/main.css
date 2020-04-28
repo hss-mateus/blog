@@ -1,0 +1,173 @@
+/* begin of css reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* end of css reset */
+
+body {
+  font-family: sans-serif;
+  font-size: 100%;
+  letter-spacing: 0.04em;
+  background: #282828;
+  color: #ebdbb2;
+  text-rendering: optimizeLegibility;
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+h1, h2, h3 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+h1, h2, h3, b, strong { font-weight: bold; }
+
+h1 { font-size: 2em; }
+
+h2 { font-size: 1.5em; }
+
+h3 { font-size: 1.1em; }
+
+a { color: #ebdbb2; }
+
+a:hover {
+  color: #a89984;
+  cursor: pointer;
+}
+
+h1 a, h2 a, h3 a { text-decoration: none; }
+
+p {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+ol, ul {
+  margin-left: 20px;
+  padding: 0;
+}
+
+ol { list-style-type: lower-alpha; }
+
+ul { list-style-type: circle; }
+
+li { line-height: 1.5em; }
+
+code:not([class^="language"]) {
+  border-radius: 5px;
+  font-size: .9em;
+  margin 0 2px;
+  padding: 1px 6px;
+  background-color: #3c3836 !important;
+  font-family: Monaco, Andale Mono, Ubuntu Mono, monospace;
+}
+
+pre code:not([class^="language"]) {
+  font-size: initial;
+  margin: initial;
+  padding: initial;
+  border-radius: initial;
+  font-family: initial;
+}
+
+hr {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-color: #ebdbb2;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 25px;
+}
+
+header a {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+}
+
+header h1 {
+  margin-bottom: 0;
+}
+
+main div {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+footer {
+  display: flex;
+  gap: 2em;
+  justify-content: end;
+}
+
+.highlight {
+  overflow: auto;
+  font-family: Monaco, Andale Mono, Ubuntu Mono, monospace;
+  font-size: 0.9em;
+  line-height: 1.5em;
+  padding: 5px;
+  border: solid 1px #3c3836;
+  border-radius: 5px;
+}
+
+.highlight pre {
+  background-color: #282828 !important;
+}
