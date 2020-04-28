@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ if not .IsHome }}{{ .Title  }} | {{ end }}{{ $.Site.Title  }}</title>
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/main.css">
+    <link rel="stylesheet" href="{{ "main.css" | absURL }}">
   </head>
   <body>
     <header>
@@ -26,9 +26,9 @@
     <hr>
 
     <footer>
-      <a href="{{ .Site.BaseURL }}../">About Me</a>
+      <a href="https://hss-mateus.github.io/">About Me</a>
 
-      <a href="{{ .Site.BaseURL }}index.xml">RSS</a>
+      <a href="{{ .Site.BaseURL }}/index.xml">RSS</a>
     </footer>
   </body>
 </html>
