@@ -1,7 +1,7 @@
 ---
 title: "Coding With Vim - Basic Commands"
 date: 2020-04-28T17:13:09-03:00
-draft: true
+draft: false
 ---
 
 ## What is Vim?
