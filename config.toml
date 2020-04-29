@@ -1,4 +1,4 @@
-baseURL = "http://hss-mateus.github.io/blog"
+baseURL = "https://hss-mateus.github.io/blog"
 languageCode = "en-us"
 title = "hss-mateus"
 theme = "default"
