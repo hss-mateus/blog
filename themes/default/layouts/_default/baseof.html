@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ if not .IsHome }}{{ .Title  }} | {{ end }}{{ $.Site.Title  }}</title>
+    <title>{{ .Title  }}</title>
     <link rel="stylesheet" href="{{ "main.css" | absURL }}">
   </head>
   <body>
@@ -15,20 +15,10 @@
         {{ .Site.Title }}
         {{ end }}
       </h1>
-
-      {{ if not .IsHome }}<a href="{{ .Site.BaseURL }}">home ↩</a>{{ end  }}
     </header>
 
     <hr>
 
     {{ block "main" . }}{{- end }}
-
-    <hr>
-
-    <footer>
-      <a href="https://hss-mateus.github.io/">About Me</a>
-
-      <a href="{{ .Site.BaseURL }}/index.xml">RSS</a>
-    </footer>
   </body>
 </html>
