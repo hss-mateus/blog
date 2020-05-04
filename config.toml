@@ -6,4 +6,4 @@ contentDir = "posts"
 
 [markup]
   [markup.highlight]
-    style = "solarized-dark"
+    style = "github"

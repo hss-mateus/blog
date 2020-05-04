@@ -54,11 +54,11 @@ table {
 /* end of css reset */
 
 body {
-  font-family: sans-serif;
+  font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
   font-size: 100%;
   letter-spacing: 0.04em;
-  background: #282828;
-  color: #ebdbb2;
+  background: #fdfdf0;
+  color: #181818;
   text-rendering: optimizeLegibility;
   max-width: 680px;
   margin: 0 auto;
@@ -80,12 +80,9 @@ h2 { font-size: 1.5em; }
 
 h3 { font-size: 1.1em; }
 
-a { color: #ebdbb2; }
+a { color: #181818; }
 
-a:hover {
-  color: #a89984;
-  cursor: pointer;
-}
+a:hover { color: #686868; }
 
 h1 a, h2 a, h3 a { text-decoration: none; }
 
@@ -112,7 +109,7 @@ code:not([class^="language"]) {
   font-size: .9em;
   margin 0 2px;
   padding: 1px 6px;
-  background-color: #3c3836 !important;
+  background-color: #ecece0 !important;
   font-family: Monaco, Andale Mono, Ubuntu Mono, monospace;
 }
 
@@ -127,7 +124,8 @@ pre code:not([class^="language"]) {
 hr {
   margin-top: 25px;
   margin-bottom: 25px;
-  border-color: #ebdbb2;
+  border-color: #181818;
+  border-top: none;
 }
 
 header {
@@ -163,10 +161,10 @@ footer {
   font-size: 0.9em;
   line-height: 1.5em;
   padding: 5px;
-  border: solid 1px #3c3836;
+  border: solid 1px #ecece0;
   border-radius: 5px;
 }
 
 .highlight pre {
-  background-color: #282828 !important;
+  background-color: #fdfdf0 !important;
 }
