@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&display=swap');
+
 /* begin of css reset */
 
 html, body, div, span, applet, object, iframe,
@@ -53,13 +55,22 @@ table {
 
 /* end of css reset */
 
+:root {
+  --light-0: #eceff4;
+  --light-1: #e5e9f0;
+  --light-2: #d8dee9;
+  --dark-0: #2e3440;
+  --dark-1: #3b4252;
+  --dark-2: #4c566a;
+}
+
 body {
-  font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+  font-family: 'Lora', Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
   font-size: 100%;
   letter-spacing: 0.04em;
-  background: #fdfdf0;
-  color: #181818;
   text-rendering: optimizeLegibility;
+  color: var(--dark-0);
+  background: var(--light-0);
   max-width: 680px;
   margin: 0 auto;
   padding: 50px;
@@ -80,9 +91,9 @@ h2 { font-size: 1.5em; }
 
 h3 { font-size: 1.1em; }
 
-a { color: #181818; }
+a { color: var(--dark-0); }
 
-a:hover { color: #686868; }
+a:hover { color: var(--dark-2); }
 
 h1 a, h2 a, h3 a { text-decoration: none; }
 
@@ -109,7 +120,7 @@ code:not([class^="language"]) {
   font-size: .9em;
   margin 0 2px;
   padding: 1px 6px;
-  background-color: #ecece0 !important;
+  background-color: var(--light-2) !important;
   font-family: Monaco, Andale Mono, Ubuntu Mono, monospace;
 }
 
@@ -124,7 +135,7 @@ pre code:not([class^="language"]) {
 hr {
   margin-top: 25px;
   margin-bottom: 25px;
-  border-color: #181818;
+  border-color: var(--light-2);
   border-top: none;
 }
 
@@ -161,10 +172,10 @@ footer {
   font-size: 0.9em;
   line-height: 1.5em;
   padding: 5px;
-  border: solid 1px #ecece0;
+  border: solid 1px var(--light-2);
   border-radius: 5px;
 }
 
 .highlight pre {
-  background-color: #fdfdf0 !important;
+  background-color: var(--light-0) !important;
 }
