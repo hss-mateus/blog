@@ -1,9 +1,0 @@
-baseURL = "https://hss-mateus.github.io/blog"
-languageCode = "en-us"
-title = "hss-mateus"
-theme = "default"
-contentDir = "posts"
-
-[markup]
-  [markup.highlight]
-    style = "bw"
