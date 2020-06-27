@@ -1,0 +1,85 @@
+What is Vim?
+
+Vim is a terminal-based text editor with focus in eficiency and productivity.
+Vim makes developer's life a lot easier, with useful time-saving commands and
+shortcuts, in comparison with the traditional way of editing using the mouse.
+
+Why I Should Use Vim?
+
+Most of the time you don't write code from zero. You will pass more time
+navigating and editing existing code instead, and vim have all you need to do
+this in a way more faster than using a regular text editor and a mouse.
+
+Navigating
+
+Vim let you stay in the home row [1] almost all the time, so instead of navigate
+with the arrow keys, you will use h, j, k and l keys - left, up, down and right,
+respectively.
+
+Modes
+
+If you open vim for the first time and try to type something, you will notice
+that nothing will happen. That's because vim have the concept of modal editing.
+In modal editing, you switch between modes to change the text. The 3 main modes
+that vim have are normal, insert, visual and command. You can see what mode you
+currently are on the bottom-left of your screen (except in the command mode).
+
+The concepts for each one are simple: To navigate in your code or enter in any
+other mode, switch to normal mode. To insert new text, switch to insert mode. To
+select a block of text, switch to visual mode. To run a specific command, switch
+to command mode.
+
+Normal Mode
+
+You can switch to this mode by pressing esc. In normal mode you have shortcuts
+to navigate through your code, such as jump to a line or find a word. The basic
+shortcuts in this mode are:
+
+w    Go to the next word
+e    Go to the end of the selected word
+x    Delete the selected character
+yy   Copy the selected line
+dd   Cut the selected line
+p    Paste
+a    Insert after the cursor
+o    Insert a new line
+/foo Find a occurrence (You can use regexes here too)
+n    Go to the next occurrence
+
+Insert Mode
+
+This mode doesn't have any special shortcut, here you will just write text and
+press esc to go back to normal mode.
+
+Visual Mode
+
+This mode allows you to select a block of text and do something with it. Here
+you can use some normal-mode shortcuts to decide what you want to do with the
+selected content.
+
+Command Mode
+
+By typing : in normal mode, a prompt will appear in the bottom of your screen.
+In this prompt you can enter more complex commands, but the simple ones are:
+
+q              Exit
+w              Save
+noh            Remove the highlight of the matched occurrencies
+set number     Display line numbers
+set autoindent Indent lines while you type
+g/foo/d        Delete all occurrencies
+%s/foo/bar/g   Replace all occurrencies
+
+What's Next?
+
+It's recommended to only practice these commands at the moment, until you feel
+confortable to use them. After that, you can learn dozens of commands and
+shortcuts by running the vimtutor program in your terminal (It already comes
+with vim, so you don't need to install it). This program will give you a more
+detailed guide about using vim.
+
+You can also visit the vim-galore [2] repository in Github, which have a big
+list of resources and plug-ins about vim.
+
+[1] https://www.computerhope.com/jargon/h/hrk.htm
+[2] https://github.com/mhinz/vim-galore
